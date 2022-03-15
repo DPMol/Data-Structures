@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Proiect_C__"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Proiect_C__">
+				<Option output="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Proiect_C__.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/."/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proiect_C__"/>
+					<CompileFile command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Proiect_C__/fast">
+				<Option output="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Proiect_C__.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/."/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proiect_C__/fast"/>
+					<CompileFile command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/App.cpp">
+			<Option target="Proiect_C__"/>
+		</Unit>
+		<Unit filename="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/Matrice.cpp">
+			<Option target="Proiect_C__"/>
+		</Unit>
+		<Unit filename="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/Matrice.h">
+			<Option target="Proiect_C__"/>
+		</Unit>
+		<Unit filename="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/TestExtins.cpp">
+			<Option target="Proiect_C__"/>
+		</Unit>
+		<Unit filename="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/TestExtins.h">
+			<Option target="Proiect_C__"/>
+		</Unit>
+		<Unit filename="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/TestScurt.cpp">
+			<Option target="Proiect_C__"/>
+		</Unit>
+		<Unit filename="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/TestScurt.h">
+			<Option target="Proiect_C__"/>
+		</Unit>
+		<Unit filename="D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
