@@ -1,4 +1,4 @@
-# Install script for directory: D:/Programming/Fkijg Sda/Lab1/Proiect C++
+# Install script for directory: D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/Programming/IDE/CLion 2021.3.3/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/Programming n shit/CLion 2021.3.3/bin/mingw/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Programming/Fkijg Sda/Lab1/Proiect C++/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Programming n shit/UBB/Anul 1/Data-Structures/Lab1/Proiect C++/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,17 +1,17 @@
 #include "Matrice.h"
-#include <iostream>
 #include <exception>
 
 using namespace std;
 
 Matrice::Matrice(int m, int n) {
 	/* de adaugat */
+    //complexitate O(n)
 
 	//numar linii + coloane
 	this->n = m;
 	this->m = n;
 
-	//vector linii
+	//vector linii si valori
     row = new int[0];
     column = new int[m+1];
     value = new TElem [0];
@@ -20,11 +20,12 @@ Matrice::Matrice(int m, int n) {
 	for(int i=0;i<=n;i++)
 		column[i] = 0;
 
-	//vector valori
+	//lungime initiala
     len = 0;
 }
 
 int Matrice::check_poz(int i, int j) const{
+    //complexitate O(column[i+1] - column[i])
     for(int k = column[j]; k < column[j+1]; k++)
         if(row[k] == i)
             return k;
@@ -52,6 +53,8 @@ int Matrice::nrColoane() const{
 
 TElem Matrice::element(int i, int j) const{
 	/* de adaugat */
+    //complexitate O(column[i+1] - column[i])
+
     int poz;
 	//varificare validitate i,j
     valid_poz(i, j);
@@ -67,6 +70,8 @@ TElem Matrice::element(int i, int j) const{
 
 TElem Matrice::modifica(int i, int j, TElem e) {
 	/* de adaugat */
+
+    //complexitate O((row[i+1] - row[i]) + )
 
 	//varificare validitate i,j
     valid_poz(i,j);
@@ -84,6 +89,7 @@ TElem Matrice::modifica(int i, int j, TElem e) {
 
             len++;
             int *newrow = new int[len] , *newvalue = new TElem[len];
+
 
             for(poz = 0;poz < column[j];poz++){
                 newrow[poz] = row[poz];
