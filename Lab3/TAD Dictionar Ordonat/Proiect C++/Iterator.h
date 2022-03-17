@@ -7,7 +7,7 @@ class Iterator{
 private:
 	//constructorul primeste o referinta catre Container
 	//iteratorul va referi primul element din container
-	Iterator(const DO& dictionar);
+	explicit Iterator(const DO& dictionar);
 
 	//contine o referinta catre containerul pe care il itereaza
 	const DO& dict;

@@ -34,7 +34,7 @@ class DO {
     public:
 
 	// constructorul implicit al dictionarului
-	DO(Relatie r);
+	explicit DO(Relatie r);
 
 
 	// adauga o pereche (cheie, valoare) in dictionar
