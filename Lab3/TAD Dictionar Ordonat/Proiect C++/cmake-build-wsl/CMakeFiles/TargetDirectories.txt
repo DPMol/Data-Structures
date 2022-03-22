@@ -1,0 +1,3 @@
+/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab3/TAD Dictionar Ordonat/Proiect C++/cmake-build-wsl/CMakeFiles/Proiect_C__.dir
+/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab3/TAD Dictionar Ordonat/Proiect C++/cmake-build-wsl/CMakeFiles/edit_cache.dir
+/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab3/TAD Dictionar Ordonat/Proiect C++/cmake-build-wsl/CMakeFiles/rebuild_cache.dir

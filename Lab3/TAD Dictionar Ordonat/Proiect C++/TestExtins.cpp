@@ -5,7 +5,8 @@
 #include "Iterator.h"
 #include "DO.h"
 #include "TestExtins.h"
-using namespace std;
+
+using namespace std;
 
 bool cresc(TCheie c1, TCheie c2) {
 	if (c1 <= c2) {

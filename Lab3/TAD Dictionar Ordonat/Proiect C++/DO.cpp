@@ -78,7 +78,7 @@ TValoare DO::sterge(TCheie c) {
         previous->next = current->next;
 
     TValoare temp = current->element.second;
-    free(current);
+    delete current;
 
     return temp;
 }
@@ -114,7 +114,7 @@ DO::~DO() {
     while(ptr != nullptr)
     {
         temp = ptr->next;
-        free(ptr);
+        delete ptr;
         ptr = temp;
     }
 }
