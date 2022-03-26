@@ -1,6 +1,5 @@
 #include "Iterator.h"
 #include "DO.h"
-#include <iostream>
 
 #include <exception>
 using namespace std;
@@ -93,6 +92,30 @@ int DO::dim() const {
         i = i->next;
     }
 	return size;
+}
+
+void DO::filtrare(Conditie cond){
+    node* ptr = start;
+    node* prev = nullptr;
+    while(ptr != nullptr)
+    {
+        if(!cond(ptr->element.first)) {
+            if(prev == nullptr){
+                start = ptr->next;
+                delete ptr;
+                ptr = start;
+            }
+            else {
+                prev->next = ptr->next;
+                delete ptr;
+                ptr = prev->next;
+            }
+        }
+        else{
+            prev = ptr;
+            ptr = ptr->next;
+        }
+    }
 }
 
 //verifica daca dictionarul e vid

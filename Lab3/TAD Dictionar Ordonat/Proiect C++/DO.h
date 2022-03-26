@@ -2,6 +2,7 @@
 
 typedef int TCheie;
 typedef int TValoare;
+typedef bool (*Conditie)(TCheie);
 
 #define NULL_TVALOARE (-1)
 
@@ -34,33 +35,44 @@ class DO {
     public:
 
 	// constructorul implicit al dictionarului
+    //O(1)
 	explicit DO(Relatie r);
 
 
 	// adauga o pereche (cheie, valoare) in dictionar
 	//daca exista deja cheia in dictionar, inlocuieste valoarea asociata cheii si returneaza vechea valoare
 	// daca nu exista cheia, adauga perechea si returneaza null: NULL_TVALOARE
+    //O(n)
 	TValoare adauga(TCheie c, TValoare v);
 
 	//cauta o cheie si returneaza valoarea asociata (daca dictionarul contine cheia) sau null: NULL_TVALOARE
+    //O(n)
 	TValoare cauta(TCheie c) const;
+
+    //Teta(n)
+    void filtrare(Conditie cond);
 
 
 	//sterge o cheie si returneaza valoarea asociata (daca exista) sau null: NULL_TVALOARE
+    //O(n)
 	TValoare sterge(TCheie c);
 
 	//returneaza numarul de perechi (cheie, valoare) din dictionar
+    //Teta(n)
 	int dim() const;
 
 	//verifica daca dictionarul e vid
+    //O(1)
 	bool vid() const;
 
 	// se returneaza iterator pe dictionar
 	// iteratorul va returna perechile in ordine dupa relatia de ordine (pe cheie)
+    //O(1)
 	Iterator iterator() const;
 
 
 	// destructorul dictionarului
+    //O(n)
 	~DO();
 
 };

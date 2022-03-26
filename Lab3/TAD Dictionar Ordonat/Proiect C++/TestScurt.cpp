@@ -1,4 +1,5 @@
 #include <assert.h>
+#include <iostream>
 
 #include "DO.h"
 #include "Iterator.h"
@@ -13,6 +14,10 @@ bool relatie1(TCheie cheie1, TCheie cheie2) {
 	else {
 		return false;
 	}
+}
+
+bool filt(TCheie key){
+    return key%2;
 }
 
 void testAll(){
@@ -35,5 +40,15 @@ void testAll(){
     }
     assert(dictOrd.sterge(1) == 3);
     assert(dictOrd.vid());
+    for(int i = 0; i<100; i++){
+        dictOrd.adauga(i,i);
+    }
+    dictOrd.filtrare(filt);
+    assert(dictOrd.dim() == 50);
+    auto newit = dictOrd.iterator();
+    while(newit.valid()){
+        assert(newit.element().first % 2);
+        newit.urmator();
+    }
 }
 
