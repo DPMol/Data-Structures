@@ -22,6 +22,7 @@ private:
 	//vector valori
 	int *value;
 
+
     //lungimea listelor de valori si linii
     int len;
 

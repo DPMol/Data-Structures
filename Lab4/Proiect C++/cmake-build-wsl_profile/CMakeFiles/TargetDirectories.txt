@@ -1,0 +1,3 @@
+/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab4/Proiect C++/cmake-build-wsl_profile/CMakeFiles/Proiect_C__.dir
+/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab4/Proiect C++/cmake-build-wsl_profile/CMakeFiles/edit_cache.dir
+/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab4/Proiect C++/cmake-build-wsl_profile/CMakeFiles/rebuild_cache.dir
