@@ -22,6 +22,17 @@ void testAll(){
     assert(lista.dim() == 1);
     assert(!lista.vida());
 
+    IteratorLP itp = lista.prim();
+
+    itp.anterior();
+    assert(!itp.valid());
+    try{
+        itp.anterior();
+        assert(false);
+    }
+    catch(exception&){
+        assert(true);
+    }
     IteratorLP it = lista.cauta(1);
 
     assert(it.valid());

@@ -36,6 +36,8 @@ public:
         //Teta(1)
 		TElem element() const;
 
+        void anterior();
+
 };
 
 

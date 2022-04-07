@@ -33,4 +33,23 @@ TElem IteratorLP::element() const{
     return lista.list.value[current];
 }
 
+void IteratorLP::anterior() {
+    if(!valid())
+        throw std::exception();
+
+
+    if(current == lista.first){
+        current = -1;
+        return;
+    }
+
+    auto temp = lista.first;
+
+    while(lista.list.next[temp] != current)
+        temp = lista.list.next[temp];
+
+    current = temp;
+
+}
+
 

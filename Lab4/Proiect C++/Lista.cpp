@@ -14,7 +14,6 @@ int Lista::new_nod(TElem value){
     first_free = list.next[poz];
     list.next[poz] = -1;
     size++;
-
     return poz;
 }
 

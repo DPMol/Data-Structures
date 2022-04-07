@@ -1,0 +1,3 @@
+/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles/Lab6.dir
+/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles/edit_cache.dir
+/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles/rebuild_cache.dir
