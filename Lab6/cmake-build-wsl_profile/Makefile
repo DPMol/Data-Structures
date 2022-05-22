@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6"
+CMAKE_SOURCE_DIR = "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile"
+CMAKE_BINARY_DIR = "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

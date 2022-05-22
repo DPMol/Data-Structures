@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6
+# Install script for directory: /mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

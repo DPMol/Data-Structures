@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6"
+CMAKE_SOURCE_DIR = "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile"
+CMAKE_BINARY_DIR = "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Lab6.dir/depend.make
@@ -72,72 +72,72 @@ include CMakeFiles/Lab6.dir/flags.make
 CMakeFiles/Lab6.dir/App.cpp.o: CMakeFiles/Lab6.dir/flags.make
 CMakeFiles/Lab6.dir/App.cpp.o: ../App.cpp
 CMakeFiles/Lab6.dir/App.cpp.o: CMakeFiles/Lab6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab6.dir/App.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab6.dir/App.cpp.o -MF CMakeFiles/Lab6.dir/App.cpp.o.d -o CMakeFiles/Lab6.dir/App.cpp.o -c "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/App.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lab6.dir/App.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab6.dir/App.cpp.o -MF CMakeFiles/Lab6.dir/App.cpp.o.d -o CMakeFiles/Lab6.dir/App.cpp.o -c "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/App.cpp"
 
 CMakeFiles/Lab6.dir/App.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab6.dir/App.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/App.cpp" > CMakeFiles/Lab6.dir/App.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/App.cpp" > CMakeFiles/Lab6.dir/App.cpp.i
 
 CMakeFiles/Lab6.dir/App.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab6.dir/App.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/App.cpp" -o CMakeFiles/Lab6.dir/App.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/App.cpp" -o CMakeFiles/Lab6.dir/App.cpp.s
 
 CMakeFiles/Lab6.dir/Colectie.cpp.o: CMakeFiles/Lab6.dir/flags.make
 CMakeFiles/Lab6.dir/Colectie.cpp.o: ../Colectie.cpp
 CMakeFiles/Lab6.dir/Colectie.cpp.o: CMakeFiles/Lab6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab6.dir/Colectie.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab6.dir/Colectie.cpp.o -MF CMakeFiles/Lab6.dir/Colectie.cpp.o.d -o CMakeFiles/Lab6.dir/Colectie.cpp.o -c "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/Colectie.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab6.dir/Colectie.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab6.dir/Colectie.cpp.o -MF CMakeFiles/Lab6.dir/Colectie.cpp.o.d -o CMakeFiles/Lab6.dir/Colectie.cpp.o -c "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/Colectie.cpp"
 
 CMakeFiles/Lab6.dir/Colectie.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab6.dir/Colectie.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/Colectie.cpp" > CMakeFiles/Lab6.dir/Colectie.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/Colectie.cpp" > CMakeFiles/Lab6.dir/Colectie.cpp.i
 
 CMakeFiles/Lab6.dir/Colectie.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab6.dir/Colectie.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/Colectie.cpp" -o CMakeFiles/Lab6.dir/Colectie.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/Colectie.cpp" -o CMakeFiles/Lab6.dir/Colectie.cpp.s
 
 CMakeFiles/Lab6.dir/IteratorColectie.cpp.o: CMakeFiles/Lab6.dir/flags.make
 CMakeFiles/Lab6.dir/IteratorColectie.cpp.o: ../IteratorColectie.cpp
 CMakeFiles/Lab6.dir/IteratorColectie.cpp.o: CMakeFiles/Lab6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab6.dir/IteratorColectie.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab6.dir/IteratorColectie.cpp.o -MF CMakeFiles/Lab6.dir/IteratorColectie.cpp.o.d -o CMakeFiles/Lab6.dir/IteratorColectie.cpp.o -c "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/IteratorColectie.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab6.dir/IteratorColectie.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab6.dir/IteratorColectie.cpp.o -MF CMakeFiles/Lab6.dir/IteratorColectie.cpp.o.d -o CMakeFiles/Lab6.dir/IteratorColectie.cpp.o -c "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/IteratorColectie.cpp"
 
 CMakeFiles/Lab6.dir/IteratorColectie.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab6.dir/IteratorColectie.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/IteratorColectie.cpp" > CMakeFiles/Lab6.dir/IteratorColectie.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/IteratorColectie.cpp" > CMakeFiles/Lab6.dir/IteratorColectie.cpp.i
 
 CMakeFiles/Lab6.dir/IteratorColectie.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab6.dir/IteratorColectie.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/IteratorColectie.cpp" -o CMakeFiles/Lab6.dir/IteratorColectie.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/IteratorColectie.cpp" -o CMakeFiles/Lab6.dir/IteratorColectie.cpp.s
 
 CMakeFiles/Lab6.dir/TestExtins.cpp.o: CMakeFiles/Lab6.dir/flags.make
 CMakeFiles/Lab6.dir/TestExtins.cpp.o: ../TestExtins.cpp
 CMakeFiles/Lab6.dir/TestExtins.cpp.o: CMakeFiles/Lab6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lab6.dir/TestExtins.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab6.dir/TestExtins.cpp.o -MF CMakeFiles/Lab6.dir/TestExtins.cpp.o.d -o CMakeFiles/Lab6.dir/TestExtins.cpp.o -c "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/TestExtins.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lab6.dir/TestExtins.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab6.dir/TestExtins.cpp.o -MF CMakeFiles/Lab6.dir/TestExtins.cpp.o.d -o CMakeFiles/Lab6.dir/TestExtins.cpp.o -c "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/TestExtins.cpp"
 
 CMakeFiles/Lab6.dir/TestExtins.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab6.dir/TestExtins.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/TestExtins.cpp" > CMakeFiles/Lab6.dir/TestExtins.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/TestExtins.cpp" > CMakeFiles/Lab6.dir/TestExtins.cpp.i
 
 CMakeFiles/Lab6.dir/TestExtins.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab6.dir/TestExtins.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/TestExtins.cpp" -o CMakeFiles/Lab6.dir/TestExtins.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/TestExtins.cpp" -o CMakeFiles/Lab6.dir/TestExtins.cpp.s
 
 CMakeFiles/Lab6.dir/TestScurt.cpp.o: CMakeFiles/Lab6.dir/flags.make
 CMakeFiles/Lab6.dir/TestScurt.cpp.o: ../TestScurt.cpp
 CMakeFiles/Lab6.dir/TestScurt.cpp.o: CMakeFiles/Lab6.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Lab6.dir/TestScurt.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab6.dir/TestScurt.cpp.o -MF CMakeFiles/Lab6.dir/TestScurt.cpp.o.d -o CMakeFiles/Lab6.dir/TestScurt.cpp.o -c "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/TestScurt.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Lab6.dir/TestScurt.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab6.dir/TestScurt.cpp.o -MF CMakeFiles/Lab6.dir/TestScurt.cpp.o.d -o CMakeFiles/Lab6.dir/TestScurt.cpp.o -c "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/TestScurt.cpp"
 
 CMakeFiles/Lab6.dir/TestScurt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab6.dir/TestScurt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/TestScurt.cpp" > CMakeFiles/Lab6.dir/TestScurt.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/TestScurt.cpp" > CMakeFiles/Lab6.dir/TestScurt.cpp.i
 
 CMakeFiles/Lab6.dir/TestScurt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab6.dir/TestScurt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/TestScurt.cpp" -o CMakeFiles/Lab6.dir/TestScurt.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/TestScurt.cpp" -o CMakeFiles/Lab6.dir/TestScurt.cpp.s
 
 # Object files for target Lab6
 Lab6_OBJECTS = \
@@ -157,7 +157,7 @@ Lab6: CMakeFiles/Lab6.dir/TestExtins.cpp.o
 Lab6: CMakeFiles/Lab6.dir/TestScurt.cpp.o
 Lab6: CMakeFiles/Lab6.dir/build.make
 Lab6: CMakeFiles/Lab6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Lab6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Lab6"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab6.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +169,6 @@ CMakeFiles/Lab6.dir/clean:
 .PHONY : CMakeFiles/Lab6.dir/clean
 
 CMakeFiles/Lab6.dir/depend:
-	cd "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6" "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6" "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile" "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile" "/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles/Lab6.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6" "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6" "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile" "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile" "/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile/CMakeFiles/Lab6.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Lab6.dir/depend
 

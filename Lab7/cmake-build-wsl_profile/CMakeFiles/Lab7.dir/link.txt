@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Lab7.dir/App.cpp.o CMakeFiles/Lab7.dir/IteratorMDO.cpp.o CMakeFiles/Lab7.dir/MDO.cpp.o CMakeFiles/Lab7.dir/TestExtins.cpp.o CMakeFiles/Lab7.dir/TestScurt.cpp.o -o Lab7 

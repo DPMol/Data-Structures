@@ -1,5 +1,7 @@
 #pragma once
 #include "Colectie.h"
+#include <exception>
+#define sad 2147483647
 
 class Colectie;
 typedef int TElem;
@@ -15,7 +17,7 @@ private:
     //contine o referinta catre containerul pe care il itereaza
 	const Colectie& col;
 	/* aici e reprezentarea pecifica a iteratorului*/
-
+    int poz;
 
 public:
 

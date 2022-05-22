@@ -4,26 +4,37 @@
 
 IteratorColectie::IteratorColectie(const Colectie& c): col(c) {
 	/* de adaugat */
+    prim();
 }
 
 void IteratorColectie::prim() {
 	/* de adaugat */
+    poz = -1;
+    urmator();
 }
 
 
 void IteratorColectie::urmator() {
 	/* de adaugat */
+    if(poz == col.hash){
+        throw std::exception();
+    }
+    ++poz;
+    while(col.list.element[poz] == sad && poz < col.hash){
+        ++poz;
+    }
 }
 
 
 bool IteratorColectie::valid() const {
-	/* de adaugat */
-	return false;
+    return poz != col.hash;
 }
 
 
 
 TElem IteratorColectie::element() const {
-	/* de adaugat */
-	return -1;
+    if(poz == col.hash){
+        throw std::exception();
+    }
+	return col.list.element[poz];
 }

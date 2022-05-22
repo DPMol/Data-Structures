@@ -1,5 +1,6 @@
 #pragma once
 
+#define sad 2147483647
 #define NULL_TELEM -1
 typedef int TElem;
 
@@ -11,22 +12,21 @@ class Colectie
 
 private:
 	/* aici e reprezentarea */
-    struct nod{
-        int key;
-        TElem value;
-    };
 
-    int hash = 701;
-    int capacity;
+    int hash;
     int first_free;
     int size;
     struct {
         int *next;
-        struct nod *element;
-    }list;
+        TElem *element;
+    }    list;
 
 private:
     void alloc(int new_hash);
+
+    void update_first_free();
+
+    int get_hash(TElem) const;
 
 public:
 		//constructorul implicit
@@ -51,6 +51,8 @@ public:
 
 		//verifica daca colectia e vida;
 		bool vida() const;
+
+        int del_all();
 
 		//returneaza un iterator pe colectie
 		IteratorColectie iterator() const;

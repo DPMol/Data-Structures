@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/."
+CXX_INCLUDES = -I"/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/."
 
 CXX_FLAGS = -g -std=gnu++14
 

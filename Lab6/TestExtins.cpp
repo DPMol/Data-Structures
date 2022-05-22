@@ -13,9 +13,11 @@ void testCreeaza() {
 	Colectie c;
 	assert(c.dim() == 0);
 	assert(c.vida() == true);
+
 	for (int i = -5; i < 5; i++) { //cautam in colectia vida
 		assert(c.cauta(i) == false);
 	}
+
 	for (int i = -10; i < 10; i++) { //stergem din colectia vida
 		assert(c.sterge(i) == false);
 	}
@@ -90,8 +92,9 @@ void testSterge() {
 	for (int i = -100; i < 100; i = i + 2) { //adaugam elemente din 2 in 2 (numere pare)
 		c.adauga(i);
 	}
+
 	for (int i = -100; i < 100; i++) { //stergem tot (inclusiv elemente inexistente)
-	
+        //std::cout<<std::endl<<i<<" "<<c.cauta(i);
 		if (i % 2 == 0) {
 			assert(c.sterge(i) == true);
 		}
@@ -129,9 +132,11 @@ void testSterge() {
 		assert(c.sterge(i) == true);
 	}
 	assert(c.dim() == 800);
-	for (int i = -100; i < 100; i++) { 
+	for (int i = -100; i < 100; i++) {
+        //cout<<i<<endl;
 		assert(c.nrAparitii(i) == 4);
 	}
+
 	for (int i = -200; i < 200; i++) { //stergem 5 aparitii de la elemente inexistente si existente (dar si acolo exista doar 4 aparitii)
 		if (i < -100 || i >= 100) {
 			assert(c.sterge(i) == false);
@@ -141,13 +146,15 @@ void testSterge() {
 			assert(c.sterge(i) == false);
 		}
 		else {
+            cout<<"\n"<<i<<" "<<c.nrAparitii(81);
 			assert(c.sterge(i) == true);
 			assert(c.sterge(i) == true);
 			assert(c.sterge(i) == true);
 			assert(c.sterge(i) == true);
 			assert(c.sterge(i) == false);
+            //std::cout<<i<<"\n";
 		}
-	}	
+	}
 	assert(c.dim() == 0);
 	for (int i = -1000; i < 1000; i++) {
 		assert(c.nrAparitii(i) == 0);
@@ -254,9 +261,9 @@ void testIterator() { // nu stim reprezentarea Colectiei, putem testa doar anumi
 	
 	assert(elemente.size() == c4.dim());
 	for (unsigned int i = 0; i < elemente.size(); i++) { //scoatem pe rand elemente din vectorul dat de iterator, verificam sa fie in colectie si le stergem si din vector si din c4. Incepem stergerea cu ultimul
-		TElem lastElem = elemente.at(elemente.size() - i  - 1);		
+		TElem lastElem = elemente.at(elemente.size() - i  - 1);
 		assert(c4.cauta(lastElem) == true);
-		c4.sterge(lastElem);		
+		c4.sterge(lastElem);
 	}
 
 	Colectie c5; // adaugam niste elemente in colectie
@@ -317,8 +324,9 @@ void testQuantity() {//scopul e sa adaugam multe date
 
 void testAllExtins() {
 	testCreeaza();
+
 	testAdauga();
 	testSterge();
-	testIterator();
+    testIterator();
 	testQuantity();
 }

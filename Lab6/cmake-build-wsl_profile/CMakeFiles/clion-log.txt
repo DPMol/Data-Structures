@@ -1,4 +1,4 @@
-C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' '/mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6'"
+C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' '/mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6'"
 -- The C compiler identification is GNU 9.4.0
 -- The CXX compiler identification is GNU 9.4.0
 -- Detecting C compiler ABI info
@@ -13,4 +13,4 @@ C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CL
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/d/Programming n shit/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile
+-- Build files have been written to: /mnt/d/Programming/UBB/Anul 1/Data-Structures/Lab6/cmake-build-wsl_profile

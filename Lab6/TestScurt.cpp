@@ -2,6 +2,7 @@
 #include <assert.h>
 #include "Colectie.h"
 #include "IteratorColectie.h"
+#include <iostream>
 
 
 
@@ -23,6 +24,7 @@ void testAll() { //apelam fiecare functie sa vedem daca exista
 	assert(c.cauta(16) == false);
 	assert(c.nrAparitii(1) == 2);
 	assert(c.nrAparitii(7) == 1);
+
 	assert(c.sterge(1) == true);
 	assert(c.sterge(6) == false);
 	assert(c.dim() == 6);
@@ -32,5 +34,5 @@ void testAll() { //apelam fiecare functie sa vedem daca exista
 	while (ic.valid()) {
 		TElem e = ic.element();
 		ic.urmator();
-	}	 
+	}
 }

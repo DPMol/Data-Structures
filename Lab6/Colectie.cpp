@@ -6,69 +6,130 @@
 using namespace std;
 
 void Colectie::alloc(int new_hash){
-	auto* new_next = new int[new_hash];
-	auto* new_element = new struct nod[new_hash];
+	auto* old_next = list.next;
+    auto* old_element =  list.element;
+    list.next = new int[new_hash];
+    list.element = new TElem[new_hash];
+    size = 0;
+    for(int i = 0; i <new_hash; i++){
+        list.next[i] = sad;
+        list.element[i] = sad;
+    }
+    first_free = 0;
+
 	for(int i = 0;i < hash;i++){
-		new_next[i] = list.next[i];
-		new_element[i].value = list.element[i].value;
-		new_element[i].key = list.element[i].key;
+		if(old_element[i] != sad){
+            adauga(old_element[i]);
+        }
 	}
-	first_free = hash;
-	for(int i = hash; i <new_hash-1; i++)
-		new_next[i] = i + 1;
-	new_next[new_hash-1] = -1;
+
 	hash = new_hash;
-	delete[] list.next;
-	delete[] list.element;
-	list.next = new_next;
-	list.element = new_element;
+	delete[] old_next;
+	delete[] old_element;
 }
 
 Colectie::Colectie() {
 	/* de adaugat */
 	hash = 0;
-	size = 0;
-	first_free = 0;
 	list.next = nullptr;
 	list.element = nullptr;
-	alloc(50);
+	alloc(500000);
 }
 
 
 void Colectie::adauga(TElem elem) {
 	/* de adaugat */
-	auto poz = elem % hash;
 
-	if(list.element[poz].key == -1)
+	auto poz = get_hash(elem);
+    if(size == hash){
+        this->alloc(hash*2);
+    }
+    if(list.element[poz] == sad){
+        list.element[poz] = elem;
+        if(poz == first_free){
+            update_first_free();
+        }
+    }else{
+        while(list.next[poz] != sad){
+            poz = list.next[poz];
+        }
+        list.next[poz] = first_free;
+        list.element[first_free] = elem;
+        update_first_free();
+    }
+    size++;
 }
 
 
 bool Colectie::sterge(TElem elem) {
-	/* de adaugat */
-	return false;
+    int current = get_hash(elem), poz, ant, last = sad;
+
+    while (current != sad && list.element[current] != elem) {
+        last = current;
+        current = list.next[current];
+    }
+    if (current == sad) {
+        return false;
+    }
+
+    //am gasit elemetul pe care il sterg
+    while(true) {
+        poz = current;
+        ant = current;
+        current = list.next[current];
+        while (current != sad && get_hash(list.element[current]) != poz) {
+            ant = current;
+            current = list.next[current];
+        }
+        if (current == sad) {
+            if (last != sad) {
+                list.next[last] = list.next[poz];
+            }
+            list.element[poz] = sad;
+            list.next[poz] = sad;
+            --size;
+            update_first_free();
+            return true;
+        }
+       list.element[poz] = list.element[current];
+        last = ant;
+    }
 }
 
 
 bool Colectie::cauta(TElem elem) const {
 	/* de adaugat */
+    auto poz = get_hash(elem);
+    while(poz != sad){
+        if(list.element[poz] == elem){
+            return true;
+        }
+        poz = list.next[poz];
+    }
 	return false;
 }
 
 int Colectie::nrAparitii(TElem elem) const {
-	/* de adaugat */
-	return 0;
+    int c = 0;
+    auto poz = get_hash(elem);
+    while(poz != sad){
+        if(list.element[poz] == elem)
+            c++;
+        poz = list.next[poz];
+    }
+	return c;
 }
 
 
 int Colectie::dim() const {
 	/* de adaugat */
-	return 0;
+	return size;
 }
 
 
 bool Colectie::vida() const {
 	/* de adaugat */
-	return true;
+	return size == 0;
 }
 
 IteratorColectie Colectie::iterator() const {
@@ -78,6 +139,37 @@ IteratorColectie Colectie::iterator() const {
 
 Colectie::~Colectie() {
 	/* de adaugat */
+    delete[] list.next;
+    delete[] list.element;
+}
+
+void Colectie::update_first_free() {
+    first_free = 0;
+    while(first_free<hash && list.element[first_free] != sad){
+        first_free++;
+    }
+}
+
+int Colectie::get_hash(const TElem e) const{
+    return abs(e%hash);
+}
+
+int Colectie::del_all() {
+    int con = 0;
+    auto c = iterator();
+
+    while(c.valid()){
+        auto n = nrAparitii(c.element());
+        if( n > 1){
+            while(n>0){
+                con++;
+                sterge(c.element());
+                n--;
+            }
+        }
+        c.urmator();
+    }
+    return con;
 }
 
 
