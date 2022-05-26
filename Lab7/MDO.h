@@ -8,6 +8,7 @@ typedef int TCheie;
 typedef int TValoare;
 
 #include <utility>
+
 typedef std::pair<TCheie, TValoare> TElem;
 
 using namespace std;
@@ -42,11 +43,11 @@ class MDO {
     int rad;
     int first_free;
 
-    void alloc(int);
+    void alloc(int); //Teta(capacity)
 
-    int find(int, TCheie) const;
+    int find(int, TCheie) const;//O(h)
 
-    int parinte(int nod) const{
+    int parinte(int nod) const{//O(h)
         if(nod == rad){
             return -1;
         }
@@ -66,7 +67,7 @@ class MDO {
         return poz;
     }
 
-    int succesor(int nod) const{
+    int succesor(int nod) const{//O(h^2)
         if(list[nod].dreapta != -1){
             return min(list[nod].dreapta);
         }
@@ -80,7 +81,7 @@ class MDO {
         return p;
     }
 
-    int min(int p) const {
+    int min(int p) const {//O(h)
         if(p == -1)
             return -1;
         while(list[p].stanga != -1)
@@ -90,7 +91,7 @@ class MDO {
 
     bool del(int, TCheie, TValoare);
 
-    void update_free(){
+    void update_free(){//O(n)
         first_free = 0;
         while(first_free < capacity && list[first_free].el != nullptr)
             first_free++;
@@ -99,23 +100,25 @@ class MDO {
     public:
 
 	// constructorul implicit al MultiDictionarului Ordonat
-	MDO(Relatie r);
+	MDO(Relatie r);//O(1)
 
 	// adauga o pereche (cheie, valoare) in MDO
-	void adauga(TCheie c, TValoare v);
+	void adauga(TCheie c, TValoare v);//O(h)
 
 	//cauta o cheie si returneaza vectorul de valori asociate
-	vector<TValoare> cauta(TCheie c) const;
+	vector<TValoare> cauta(TCheie c) const;//O(h)
+
+    vector<TValoare> get_all() const;
 
 	//sterge o cheie si o valoare 
 	//returneaza adevarat daca s-a gasit cheia si valoarea de sters
-	bool sterge(TCheie c, TValoare v);
+	bool sterge(TCheie c, TValoare v);//O(h)
 
 	//returneaza numarul de perechi (cheie, valoare) din MDO 
-	int dim() const;
+	int dim() const;//O(1)
 
 	//verifica daca MultiDictionarul Ordonat e vid 
-	bool vid() const;
+	bool vid() const;//O(1)
 
 	// se returneaza iterator pe MDO
 	// iteratorul va returna perechile in ordine in raport cu relatia de ordine
@@ -125,3 +128,5 @@ class MDO {
 	~MDO();
 
 };
+
+

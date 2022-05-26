@@ -15,6 +15,7 @@ MDO::MDO(Relatie r):rel(r) {
     first_free = 0;
 }
 
+
 void MDO::alloc(int new_cap){
     auto new_list = new node_list[new_cap];
 
@@ -115,9 +116,19 @@ bool MDO::sterge(TCheie c, TValoare v){
     //cout<<nod<<" "<<list[nod].stanga<<" "<<list[nod].dreapta<<endl;
 
     if(list[nod].stanga == -1 && list[nod].dreapta == -1){
-        delete list[nod].el;
+
         if(nod == rad)
             rad = -1;
+        else{
+            auto p = parinte(nod);
+            if(list[p].stanga == nod){
+                list[p].stanga=-1;
+            }else{
+                list[p].dreapta=-1;
+            }
+        }
+        delete list[nod].el;
+        list[nod].el = nullptr;
         return true;
     }
     if(list[nod].stanga != -1 && list[nod].dreapta != -1){
@@ -134,7 +145,7 @@ bool MDO::sterge(TCheie c, TValoare v){
         }
         else{
             list[nod].el = list[temp].el;
-            list[last].stanga = list[temp].stanga;
+            list[last].stanga = list[temp].dreapta;
         }
         list[temp].el = nullptr;
         list[temp].stanga = -1;
@@ -146,23 +157,34 @@ bool MDO::sterge(TCheie c, TValoare v){
         int temp;
         if(list[nod].stanga == -1){
             temp = list[nod].dreapta;
+            while(list[temp].stanga != -1){
+                last = temp;
+                temp = list[temp].stanga;
+            }
         }
         else{
             temp = list[nod].stanga;
+            while(list[temp].dreapta != -1){
+                last = temp;
+                temp = list[temp].dreapta;
+            }
         }
-        while(list[temp].stanga != -1){
-            last = temp;
-            temp = list[temp].stanga;
-        }
+
         delete list[nod].el;
 
         if(last == nod){
             list[nod].el = list[temp].el;
-            list[nod].dreapta = list[temp].dreapta;
+            if(list[nod].stanga == -1)
+                list[nod].dreapta = list[temp].dreapta;
+            else
+                list[nod].stanga = list[temp].stanga;
         }
         else{
             list[nod].el = list[temp].el;
-            list[last].stanga = list[temp].stanga;
+            if(list[nod].stanga == -1)
+                list[last].stanga = list[temp].dreapta;
+            else
+                list[last].dreapta = list[temp].stanga;
         }
         list[temp].stanga = -1;
         list[temp].dreapta = -1;
@@ -193,5 +215,34 @@ IteratorMDO MDO::iterator() const {
 
 MDO::~MDO() {
 	/* de adaugat */
+    for(int i = 0; i< capacity;i++){
+        delete(list[i].el);
+    }
     delete[] list;
 }
+
+vector<TValoare> MDO::get_all() const {
+    auto it = iterator();
+    it.prim();
+    vector<TValoare> out;
+    while(it.valid()){
+        out.push_back(it.element().second);
+        it.urmator();
+    }
+    return out;
+}
+
+/*
+Pre: mdo-multidictionar ordonat
+Post: v - vector cu toate TValorile
+Subalgoritm dif(mdo^i, v^o):
+	it <- iterator(mdo)
+    cat timp(valid(it))
+        push_back(v, second(element(it)))
+        urmator(it)
+    sf cat timp
+    subalgortim <- v
+sf subalgortim
+
+
+*/

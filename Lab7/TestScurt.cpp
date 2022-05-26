@@ -40,5 +40,23 @@ void testAll(){
     assert(dictOrd.sterge(1, 3) == true);
     assert(dictOrd.sterge(2, 1) == false);
     assert(dictOrd.vid());
+
+    auto c2 = MDO(relatie1);
+    for(int i = 0; i<10;i++){
+        c2.adauga(i, i);
+        c2.adauga(i, i);
+    }
+
+    auto v2 = c2.get_all();
+
+
+    for(int i = 9; i>=0;i--){
+        auto el =v2.back();
+        v2.pop_back();
+        assert(el == i);
+        el =v2.back();
+        v2.pop_back();
+        assert(el == i);
+    }
 }
 

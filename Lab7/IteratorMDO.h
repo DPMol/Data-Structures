@@ -9,7 +9,7 @@ private:
 
 	//constructorul primeste o referinta catre Container
 	//iteratorul va referi primul element din container
-	IteratorMDO(const MDO& dictionar);
+	explicit IteratorMDO(const MDO& dictionar);
 
 	//contine o referinta catre containerul pe care il itereaza
 	const MDO& dict;
@@ -21,17 +21,17 @@ private:
 public:
 
 		//reseteaza pozitia iteratorului la inceputul containerului
-		void prim();
+		void prim();//O(h)
 
 		//muta iteratorul in container
 		// arunca exceptie daca iteratorul nu e valid
-		void urmator();
+		void urmator();//O(h^2)
 
 		//verifica daca iteratorul e valid (indica un element al containerului)
-		bool valid() const;
+		bool valid() const;//O(1)
 
 		//returneaza valoarea elementului din container referit de iterator
 		//arunca exceptie daca iteratorul nu e valid
-		TElem element() const;
+		TElem element() const;//O(1)
 };
 

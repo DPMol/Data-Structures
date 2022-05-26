@@ -1,0 +1,3 @@
+/mnt/d/Programming/UBB/Anul 1/Data-Structures/Colectie/cmake-build-wsl_profile/CMakeFiles/Colectie.dir
+/mnt/d/Programming/UBB/Anul 1/Data-Structures/Colectie/cmake-build-wsl_profile/CMakeFiles/edit_cache.dir
+/mnt/d/Programming/UBB/Anul 1/Data-Structures/Colectie/cmake-build-wsl_profile/CMakeFiles/rebuild_cache.dir

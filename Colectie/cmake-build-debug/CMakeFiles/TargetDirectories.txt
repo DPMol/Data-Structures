@@ -1,0 +1,3 @@
+D:/Programming/UBB/Anul 1/Data-Structures/Colectie/cmake-build-debug/CMakeFiles/Colectie.dir
+D:/Programming/UBB/Anul 1/Data-Structures/Colectie/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Programming/UBB/Anul 1/Data-Structures/Colectie/cmake-build-debug/CMakeFiles/rebuild_cache.dir

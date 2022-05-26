@@ -117,28 +117,28 @@ void testSterge() {
 	
 	assert(c.dim() == 1);
 	c.sterge(-100); 
-	for (int i = -100; i < 100; i++) { //adaugam de 5 ori pe fiecare element
+	for (int i = -50; i < 50; i++) { //adaugam de 5 ori pe fiecare element
 		c.adauga(i);
 		c.adauga(i);
 		c.adauga(i);
 		c.adauga(i);
 		c.adauga(i);
 	}
-	assert(c.dim() == 1000);
-	for (int i = -100; i < 100; i++) {
+	assert(c.dim() == 500);
+	for (int i = -50; i < 50; i++) {
 		assert(c.nrAparitii(i) == 5);
 	}
-	for (int i = -100; i < 100; i++) { //stergem o aparitie de la fiecare
+	for (int i = -50; i < 50; i++) { //stergem o aparitie de la fiecare
 		assert(c.sterge(i) == true);
 	}
-	assert(c.dim() == 800);
-	for (int i = -100; i < 100; i++) {
+	assert(c.dim() == 400);
+	for (int i = -50; i < 50; i++) {
         //cout<<i<<endl;
 		assert(c.nrAparitii(i) == 4);
 	}
 
-	for (int i = -200; i < 200; i++) { //stergem 5 aparitii de la elemente inexistente si existente (dar si acolo exista doar 4 aparitii)
-		if (i < -100 || i >= 100) {
+	for (int i = -100; i < 100; i++) { //stergem 5 aparitii de la elemente inexistente si existente (dar si acolo exista doar 4 aparitii)
+		if (i < -50 || i >= 50) {
 			assert(c.sterge(i) == false);
 			assert(c.sterge(i) == false);
 			assert(c.sterge(i) == false);
@@ -146,7 +146,7 @@ void testSterge() {
 			assert(c.sterge(i) == false);
 		}
 		else {
-            cout<<"\n"<<i<<" "<<c.nrAparitii(81);
+            cout<<"\n"<<i<<" "<<c.nrAparitii(i);
 			assert(c.sterge(i) == true);
 			assert(c.sterge(i) == true);
 			assert(c.sterge(i) == true);

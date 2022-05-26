@@ -30,10 +30,16 @@ void Colectie::alloc(int new_hash){
 
 Colectie::Colectie() {
 	/* de adaugat */
-	hash = 0;
-	list.next = nullptr;
-	list.element = nullptr;
-	alloc(500000);
+	hash = 500000;
+    size = 0;
+    list.next = new int[hash];
+    list.element = new TElem[hash];
+    for (int i = 0; i < hash; i++) {
+        list.next[i] = sad;
+        list.element[i] = sad;
+    }
+    first_free = 0;
+
 }
 
 
@@ -62,37 +68,30 @@ void Colectie::adauga(TElem elem) {
 
 
 bool Colectie::sterge(TElem elem) {
-    int current = get_hash(elem), poz, ant, last = sad;
-
-    while (current != sad && list.element[current] != elem) {
-        last = current;
-        current = list.next[current];
+    int i, j, prec_j, prec_i=sad;
+    for (i = get_hash(elem); i != sad; prec_i = i, i = list.next[i]) {
+        if (list.element[i] == elem) {
+            break;
+        }
     }
-    if (current == sad) {
+    if (i == sad) {
         return false;
     }
-
-    //am gasit elemetul pe care il sterg
-    while(true) {
-        poz = current;
-        ant = current;
-        current = list.next[current];
-        while (current != sad && get_hash(list.element[current]) != poz) {
-            ant = current;
-            current = list.next[current];
+    while (1) {
+        for (j = list.next[i], prec_j = i; j != sad && get_hash(list.element[j]) != i; prec_j = j, j = list.next[j]);
+        if (j != sad) {
+            list.element[i] = list.element[j];
+            i = j;
+            prec_i = prec_j;
+            continue;
         }
-        if (current == sad) {
-            if (last != sad) {
-                list.next[last] = list.next[poz];
-            }
-            list.element[poz] = sad;
-            list.next[poz] = sad;
-            --size;
-            update_first_free();
-            return true;
+        if (prec_i != sad) {
+            list.next[prec_i] = list.next[i];
         }
-       list.element[poz] = list.element[current];
-        last = ant;
+        list.element[i] = sad;
+        list.next[i] = sad;
+        size--;
+        return true;
     }
 }
 
